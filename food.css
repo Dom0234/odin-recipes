@@ -1,0 +1,44 @@
+
+.root {
+    --pastel-red: #ffadad;
+    --pastel-orange: #ffd6a5;
+    --pastel-yellow: #fdffb6;
+    --pastel-green: #caffbf;
+    --pastel-blue: #9bf6ff;
+    --pastel-purple: #bdb2ff;
+    --pastel-pink: #ffc6ff;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: var(--pastel-purple);
+    background-image: radial-gradient(
+        var(--pastel-red),
+        var(--pastel-orange),
+        var(--pastel-yellow),
+        var(--pastel-green),
+        var(--pastel-blue),
+        var(--pastel-purple),
+        var(--pastel-pink)
+    );
+        min-height:100vh;
+        background-size:500% 500%;
+        animation: move 10s alternate infinite;
+}
+
+@keyframes move {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+
+
+}
+
